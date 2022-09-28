@@ -1,26 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Good Morning</h1>
     <script>
-        var arr = [5,8,3,7,2,4,12];
+        var arr = [5, 8, 3, 7, 2, 4, 12];
         let len = arr.length;
         let i;
-        for (i=0;i<len;i++){
-            for(let j=0;j<len;j++){
-                if (arr[j] > arr[j+1]){
+        for (i = 0; i < len; i++) {
+            for (let j = 0; j < len; j++) {
+                if (arr[j] > arr[j + 1]) {
                     let temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1]=temp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
-            }console.log(arr[i]);
+            } console.log(arr[i]);
         }
+
+
+        // console.log("Hello World");
+        // let a=5;
+        // a="Rahul";
+        // console.log(a);
+
+        //This will throw error besause the let can not be assecced
+        // console.log(b);
+        // let b=6;
+        // console.log(b);
+
+
+        // let a = 10;
+        // let b = 4;
+        // console.log(a % b);
+        // console.log(a / b);
+        // console.log("Hello" + " " + "Rambo");
+
+        // const item = {
+//   Harry: true,
+//   Subham: false,
+//   Sohan: 68,
+//   Mohan: undefined,
+//   Raj: null
+// };
+
+// console.log(item);
+// By the below two ways we can get the object
+// console.log(item.Sohan);
+// console.log(item["Mohan"]);
+// console.log(typeof item);
+
+// 1 and 2 question
+// let names="Rambo";
+// let num=5;
+// let nanum=names+num;
+// console.log(typeof (names+num));
+// console.log(typeof nanum);
+
+// 3rd one
+// const obj={
+//   name:"Rambo",
+//   Company:"Qualminds",
+//   Mob:9110136325
+// }
+// console.log(obj.Mob);
+// It will show error
+// obj="ram";
+// obj["State"]="Bihar";
+// console.log(obj.State);
+
+// Implicit Type Conversions
+// let result="3"+2;
+// let result="3"-2;
+// let result="3"*2;
+// let result="3"/2;
+// let result="3"%2;
+// let result="3"+true;
+// let result="3"+undefined;
+// let result="3"+null;
+// let result="3"-2;
+// let result="3"*2;
+// let result="3"-'hello';
+// let result="Hello"-"world";
+// let result="4"-true;
+// let result=4-true;
+// let result=4-false;
+// let result=4+false;
+// let result=4+null;
+// let result=4-null;
+// let result=4+undefined;
+// let result=null+undefined;
+// let result=true+undefined;
+// let result=4+undefined;
+// console.log(result);
+
+// Explicit Type Conversions
+// let result=Number("3245");
+// let result=Number("324e-1");
+// let result=Number(true);
+// let result=Number(false);
+// let result=Number(null);
+// let result=Number(undefined);
+// let result=Number(" ");
+// let result=parseInt("3245.65");
+// let result=Math.floor("3245.869");
+// let result=String(365);
+// let result=String(4+5);
+// let result=(36.2).toString();
+// let result=true.toString();
+// console.log(result);
+
+// let num=4;
+// if(num>0){
+//   console.log("The Number is Positive");
+// }
+// else if(num==0){
+//   console.log("The Number is equal to 0");
+// }
+// else{
+//   console.log("The Number is Negative");
+// }
     </script>
 </body>
+
 </html>
